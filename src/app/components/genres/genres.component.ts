@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
 
 import {IGenre} from "../../models";
@@ -13,8 +13,6 @@ export class GenresComponent implements OnInit {
 
   genres: IGenre[];
 
-  @Output()
-  genreEmitter = new EventEmitter<IGenre>();
 
   constructor(private movieService: MovieService, private dataService: DataService, private router: Router) {
   }

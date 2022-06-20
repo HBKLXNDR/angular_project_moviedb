@@ -8,7 +8,6 @@ export class PosterPreviewComponent implements OnInit {
 
   @Input()
   poster: string;
-  posterValue: string;
 
   constructor() { }
 
