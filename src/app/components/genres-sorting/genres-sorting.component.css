@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  background: var(--color-secondary);
+  padding-bottom: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  grid-template-columns: repeat(5, 252px);
+  grid-template-rows: repeat(4, 1fr);
+  margin: 20px auto;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+}
+
+.txt {
+  width: 200px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.txt2 {
+  color: gray;
+  font-size: 16px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.genre {
+  color: gray;
+}
+
+button {
+  border: none;
+  background: white;
+  text-align: start;
+  padding: 0;
+  cursor: pointer;
+}
+
+.pagination {
+  grid-column: 3;
+}
+
+.title {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--font-color);
+}
+
+.title span {
+  opacity: 0.5;
+}

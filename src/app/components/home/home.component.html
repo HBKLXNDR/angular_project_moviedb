@@ -1,0 +1,14 @@
+<div class="container">
+  <app-genres></app-genres>
+  <div>
+    <div class="movie">
+      <div *ngFor="let movie of movies">
+        <a routerLink="/movie-details" [state]="{data:movie}">
+          <app-poster-preview class="poster" [poster]="movie.poster_path"></app-poster-preview>
+          <div class="txt">{{movie.title}}</div>
+          <div class="txt2">Rating: {{movie.vote_average}}</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
